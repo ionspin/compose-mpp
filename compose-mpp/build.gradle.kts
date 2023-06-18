@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "dev.atsushieno"
-version = "0.1.4"
+version = "0.1.5-SNAPSHOT"
 
 kotlin {
     android {
@@ -21,6 +21,9 @@ kotlin {
         compilations.all {
             kotlinOptions.jvmTarget = "11"
         }
+    }
+    ios() {
+
     }
     sourceSets {
         val commonMain by getting {
